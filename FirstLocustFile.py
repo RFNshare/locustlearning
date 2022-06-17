@@ -1,12 +1,12 @@
-from locust import TaskSet, task, User, between
+from locust import TaskSet, task, User, between, SequentialTaskSet
 
 
 class SearchProduct(TaskSet):
-    @task
+    @task(4)
     def search_men_product(self):
         print("Searching Men Products")
 
-    @task
+    @task(1)
     def search_kids_products(self):
         print("Search Kid Products")
 
