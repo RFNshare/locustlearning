@@ -6,7 +6,7 @@ class SearchProduct(TaskSet):
     def search_men_product(self):
         print("Searching Men Products")
 
-    @task(1)
+    @task(6)
     def search_kids_products(self):
         print("Search Kid Products")
 
